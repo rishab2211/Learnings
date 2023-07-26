@@ -5,6 +5,7 @@ public class sum_till_n {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter the number till where you want to calculate sum");
         int n = sc.nextInt();
+        sc.close();// used to resolve source leak problem in system
         int sum = 0;
         for (int i = 0; i <= n; i++) {
             sum = sum + i;
