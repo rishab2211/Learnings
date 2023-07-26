@@ -14,6 +14,7 @@ public class linear_search {
         int arr[] = { 12, 92, 63, 49, 50, 62, 73, 86, 9, 99 };
         System.out.print("enter the key : ");
         int key = sc.nextInt();
+        sc.close();// used to resolve source leak problem in system
         lin_search(arr, key);
     }
 

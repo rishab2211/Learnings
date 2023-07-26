@@ -26,6 +26,7 @@ public class prime_in_range {
         Scanner sc = new Scanner(System.in);
         System.out.print("enter the last limit of the range : ");
         int n1 = sc.nextInt();
+        sc.close();// used to resolve source leak problem in system
         inrange(n1);
 
     }

@@ -5,6 +5,7 @@ public class num_reverse {
         Scanner sc = new Scanner(System.in);
         System.out.print("enter the number to be reversed : ");
         int n = sc.nextInt();
+        sc.close();// used to resolve source leak problem in system
         int rev = 0;
         int ld;
         while (n > 0) {

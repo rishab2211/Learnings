@@ -21,6 +21,7 @@ public class hollow_rhombus {
         Scanner sc = new Scanner(System.in);
         System.out.print("hw big hollow rhombus you want to make ? : ");
         int n = sc.nextInt();
+        sc.close();// used to resolve source leak problem in system
         pattern(n);
     }
 
