@@ -20,6 +20,7 @@ public class _01_triangle {
         Scanner sc = new Scanner(System.in);
         System.out.print("how big 0 1 triangle you want to make? : ");
         int n = sc.nextInt();
+        sc.close();// used to resolve source leak problem in system
         pattern(n);
     }
 
