@@ -20,6 +20,7 @@ public class hollow_rectangle {
         int m = sc.nextInt();
         System.out.print("enter the number of coloumns : ");
         int n = sc.nextInt();
+        sc.close();// used to resolve source leak problem in system
         pattern(m, n);
 
     }
