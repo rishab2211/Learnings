@@ -24,6 +24,7 @@ public class _binomial_coeff {
         int n = sc.nextInt();
         System.out.print("enter the value of r : ");
         int r = sc.nextInt();
+        sc.close();// used to resolve source leak problem in system
         int result = bincoff(n, r);
         System.out.println("the calcuted value of binomial coefficient of n and r as " + n + "," + r + " is " + result);
 
