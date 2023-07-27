@@ -16,6 +16,7 @@ public class floyds_triangle {
         Scanner sc = new Scanner(System.in);
         System.out.print("how big floyd's triangle you want to create : ");
         int n = sc.nextInt();
+        sc.close();// used to resolve source leak problem in system
         pattern(n);
 
     }
