@@ -18,6 +18,7 @@ public class bin_to_dec {
         Scanner sc = new Scanner(System.in);
         System.out.print("enter the value of binary to be converted : ");
         int n = sc.nextInt();
+        sc.close();// used to resolve source leak problem in system
         bintodec(n);
     }
 
