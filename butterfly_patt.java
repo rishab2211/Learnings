@@ -33,6 +33,7 @@ public class butterfly_patt {
         Scanner sc = new Scanner(System.in);
         System.out.print("How big butterfly pattern you want to see : ");
         int n = sc.nextInt();
+        sc.close();// used to resolve source leak problem in system
         pattern(n);
 
     }
