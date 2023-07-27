@@ -5,6 +5,7 @@ public class check_prime {
         Scanner sc = new Scanner(System.in);
         System.out.print("enter the number to check prime : ");
         int n = sc.nextInt();
+        sc.close();// used to resolve source leak problem in system
         if (n == 2) {
             System.out.print("it is prime .");
         } else {
