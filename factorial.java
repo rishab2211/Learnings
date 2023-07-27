@@ -14,6 +14,7 @@ public class factorial {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number to find factorial : ");
         int n = sc.nextInt();
+        sc.close();// used to resolve source leak problem in system
         System.out.print("The factorial of the entered number is : ");
         fact(n);
 
