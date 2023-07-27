@@ -26,6 +26,7 @@ public class diamond_patt {
         Scanner sc = new Scanner(System.in);
         System.out.print("how big diamond pattern you want to make ? : ");
         int n = sc.nextInt();
+        sc.close();// used to resolve source leak problem in system
         pattern(n);
     }
 
