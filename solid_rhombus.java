@@ -18,6 +18,7 @@ public class solid_rhombus {
         Scanner sc = new Scanner(System.in);
         System.out.print("how big rhombus pattern you want ton make ? ");
         int n = sc.nextInt();
+        sc.close();// used to resolve source leak problem in system
         pattern(n);
     }
 
