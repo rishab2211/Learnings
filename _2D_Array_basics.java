@@ -31,6 +31,7 @@ public class _2D_Array_basics {
                 }
             }
         }
+        sc.close();
 
     }
 
