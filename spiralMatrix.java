@@ -6,7 +6,8 @@ public class spiralMatrix {
         int startcol = 0;
         int endrow = matrix.length - 1;
         int endcol = matrix[0].length - 1;
-        while (startrow <= endrow && startcol <= endcol) {
+        while (startrow <= endrow && startcol <= endcol) {// = (equals to) because in case of odd number of row or
+                                                          // column if we not use it the middle element will not print
             // top
             for (int i = startcol; i <= endcol; i++) {
                 System.out.print(matrix[startcol][i] + " ");
@@ -17,7 +18,9 @@ public class spiralMatrix {
             }
             // bottom
             for (int k = endcol - 1; k >= startcol; k--) {
-                if (startrow == endrow) {
+                if (startrow == endrow) {// to tackle the situation when the number of rows or column is more than the
+                                         // number column or row in that case if we dont use this condition then code
+                                         // will print any element more than one time
                     break;
                 }
                 System.out.print(matrix[endrow][k] + " ");
